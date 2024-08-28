@@ -1,8 +1,8 @@
-# Projeto-FDS: Monitoramento de Consumo de Energia
+# Watts: Monitoramento de Consumo de Energia
 
 ## Descrição
 
-**Projeto-FDS** é uma aplicação web que permite o monitoramento em tempo real do consumo de energia elétrica de eletrodomésticos e pontos de luz de um ambiente. O sistema calcula o gasto de eletricidade por hora para cada dispositivo, exibe a somatória atual da conta de luz e faz uma previsão da fatura ao final do mês.
+**Watts** é uma aplicação web que permite o monitoramento em tempo real do consumo de energia elétrica de eletrodomésticos e pontos de luz de um ambiente. O sistema calcula o gasto de eletricidade por hora para cada dispositivo, exibe a somatória atual da conta de luz e faz uma previsão da fatura ao final do mês.
 
 ## Funcionalidades
 
