@@ -19,3 +19,13 @@
 - **Banco de Dados**: PostgreSQL
 - **Frontend**: HTML, CSS, JavaScript (opcional)
 - **APIs Externas**: Integração com APIs de provedores de energia (se aplicável) para obter tarifas dinâmicas.
+
+
+## Backlog
+
+### Entrega 01:
+
+- **[Figma](https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1)
+- **Screen Cast
+- **Quadro Jira
+- **Backlog Jira
