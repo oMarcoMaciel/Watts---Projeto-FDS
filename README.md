@@ -25,7 +25,7 @@
 
 ### Entrega 01:
 
-- [Figma](https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1)
+- [Figma](https://www.figma.com/deck/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&node-type=CANVAS&t=n0dxUu0lr7GfQnI9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
 - [Screen Cast](https://youtu.be/hQVwT0_B4r4?feature=shared) 
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
