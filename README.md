@@ -44,7 +44,7 @@
 ### Contribuintes
 
 <div>
-    <a href="https://github.com/AntonioPaess"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
+    <a href="https://github.com/"><img src="https://github.com/AntonioPaess" width="100" height="100"></a>
     <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
     <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
     <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
