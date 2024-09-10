@@ -65,6 +65,4 @@
 </div>
 
 
-| **Antônio** | **Caio** | **Matheus** | **Marco** | **João** | **Galileu** |
-
 
