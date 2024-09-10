@@ -32,19 +32,26 @@
 
 
 
-## Equipe
+## Contatos
 
-- **Antônio Paes** - <a href="mailto:ajpaj@cesar.school">📧</a>
-- **Caio Almeida** - <a href="mailto:caa@cesar.school">📧</a>
-- **Matheus Lucena** - <a href="mailto:mlh@cesar.school">📧</a>
-- **Marco Maciel** - <a href="mailto:magm@cesar.school">📧</a>
-- **João Henrique** - <a href="mailto:jhrvo@cesar.school">📧</a>
-- **Galileu Calaça** - <a href="mailto:gcmm@cesar.school">📧</a>
+- **Antônio Paes** - ajpaj@cesar.school <a href="mailto:ajpaj@cesar.school">📧</a>
+- **Caio Almeida** - caa@cesar.school <a href="mailto:caa@cesar.school">📧</a>
+- **Matheus Lucena** - mlh@cesar.school <a href="mailto:mlh@cesar.school">📧</a>
+- **Marco Maciel** - magm@cesar.school <a href="mailto:magm@cesar.school">📧</a>
+- **João Henrique** - jhrvo@cesar.school <a href="mailto:jhrvo@cesar.school">📧</a>
+- **Galileu Calaça** - gcmm@cesar.school <a href="mailto:gcmm@cesar.school">📧</a>
 
 ### Contribuintes
 
-| ![Antônio Paes](https://avatars.githubusercontent.com/u/AntonioPaess) | ![Caio Almeida](https://avatars.githubusercontent.com/u/usuario) | ![Matheus Lucena](https://avatars.githubusercontent.com/u/usuario) | ![Marco Maciel](https://avatars.githubusercontent.com/u/126691818?v=4) | ![João Henrique](https://avatars.githubusercontent.com/u/usuario) | ![Galileu Calaça](https://avatars.githubusercontent.com/u/usuario) |
-| :---: | :---: | :---: |
+<div>
+    <a href="https://github.com/AntonioPaess"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
+    <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
+    <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
+    <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
+    <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
+    <a href="https://github.com/"><img src="https://github.com/images/icons/emoji/octocat.png" width="100" height="100"></a>
+</div>
+
 | **Antônio Paes** | **Caio Almeida** | **Matheus Lucena** | **Marco Maciel** | **João Henrique** | **Galileu Calaça** |
 
 
