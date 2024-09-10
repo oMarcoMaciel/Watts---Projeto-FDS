@@ -43,7 +43,7 @@
 
 ### Contribuintes
 
-| ![Antônio Paes](https://avatars.githubusercontent.com/u/AntonioPaess) | ![Caio Almeida](https://avatars.githubusercontent.com/u/usuario) | ![Matheus Lucena](https://avatars.githubusercontent.com/u/usuario) | ![Marco Maciel](https://avatars.githubusercontent.com/u/oMarcoMaciel) | ![João Henrique](https://avatars.githubusercontent.com/u/usuario) | ![Galileu Calaça](https://avatars.githubusercontent.com/u/usuario) |
+| ![Antônio Paes](https://avatars.githubusercontent.com/u/AntonioPaess) | ![Caio Almeida](https://avatars.githubusercontent.com/u/usuario) | ![Matheus Lucena](https://avatars.githubusercontent.com/u/usuario) | ![Marco Maciel](https://avatars.githubusercontent.com/u/126691818?v=4) | ![João Henrique](https://avatars.githubusercontent.com/u/usuario) | ![Galileu Calaça](https://avatars.githubusercontent.com/u/usuario) |
 | :---: | :---: | :---: |
 | **Antônio Paes** | **Caio Almeida** | **Matheus Lucena** | **Marco Maciel** | **João Henrique** | **Galileu Calaça** |
 
