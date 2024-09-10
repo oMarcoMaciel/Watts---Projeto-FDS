@@ -27,8 +27,8 @@
 
 - [Figma](https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1)
 - [Screen Cast](https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1) 
-- [Quadro Jira]([https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9))
-- [Backlog Jira]([https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9))
+- [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
+- [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
 
 
