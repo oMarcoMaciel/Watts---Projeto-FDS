@@ -34,7 +34,7 @@
 
 ## Contatos
 
-- **Antônio Paes** - ajpaj@cesar.school <a href="mailto:ajpaj@cesar.school">📧</a>
+- **Antônio Paes** - ajpaj@cesar.school <a href="mailto:ajpaj@cesar.school">📧</a> - <a href="www.linkedin.com/in/antôniopaess"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Caio Almeida** - caa@cesar.school <a href="mailto:caa@cesar.school">📧</a>
 - **Matheus Lucena** - mlh@cesar.school <a href="mailto:mlh@cesar.school">📧</a>
 - **Marco Maciel** - magm@cesar.school <a href="mailto:magm@cesar.school">📧</a>
