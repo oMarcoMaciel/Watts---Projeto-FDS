@@ -26,7 +26,7 @@
 ### Entrega 01:
 
 - [Figma](https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1)
-- [Screen Cast](https://www.figma.com/slides/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-153&t=VK88uxlsC3f43K0y-1) 
+- [Screen Cast](https://youtu.be/hQVwT0_B4r4?feature=shared) 
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
@@ -41,9 +41,7 @@
 - **João Henrique** - jhrvo@cesar.school <a href="mailto:jhrvo@cesar.school">📧</a>
 - **Galileu Calaça** - gcmm@cesar.school <a href="mailto:gcmm@cesar.school">📧</a>
 
-### Contribuintes
-
-### Contribuintes
+## Contribuintes
 
 <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;">
     <a href="https://github.com/AntonioPaess">
@@ -67,6 +65,6 @@
 </div>
 
 
-| **Antônio Paes** | **Caio Almeida** | **Matheus Lucena** | **Marco Maciel** | **João Henrique** | **Galileu Calaça** |
+| **Antônio** | **Caio** | **Matheus** | **Marco** | **João** | **Galileu** |
 
 
