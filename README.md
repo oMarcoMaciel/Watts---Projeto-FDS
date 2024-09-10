@@ -34,12 +34,12 @@
 
 ## Contatos
 
-- **Antônio Paes** - ajpaj@cesar.school <a href="mailto:ajpaj@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/ant%C3%B4niopaess/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
-- **Caio Almeida** - caa@cesar.school <a href="mailto:caa@cesar.school">📧</a> 
-- **Matheus Lucena** - mlh@cesar.school <a href="mailto:mlh@cesar.school">📧</a> 
-- **Marco Maciel** - magm@cesar.school <a href="mailto:magm@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/marcomaciel2210/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
-- **João Henrique** - jhrvo@cesar.school <a href="mailto:jhrvo@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/jo%C3%A3o-henrique-oliveira-585b91291/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
-- **Galileu Calaça** - gcmm@cesar.school <a href="mailto:gcmm@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/galileu-cala%C3%A7a-369726241/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
+- **Antônio Paes** - <a href="mailto:ajpaj@cesar.school">📧</a> <a href="https://www.linkedin.com/in/ant%C3%B4niopaess/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
+- **Caio Almeida** - <a href="mailto:caa@cesar.school">📧</a> 
+- **Matheus Lucena** - <a href="mailto:mlh@cesar.school">📧</a> 
+- **Marco Maciel** - <a href="mailto:magm@cesar.school">📧</a> <a href="https://www.linkedin.com/in/marcomaciel2210/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
+- **João Henrique** - <a href="mailto:jhrvo@cesar.school">📧</a> <a href="https://www.linkedin.com/in/jo%C3%A3o-henrique-oliveira-585b91291/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
+- **Galileu Calaça** - <a href="mailto:gcmm@cesar.school">📧</a> <a href="https://www.linkedin.com/in/galileu-cala%C3%A7a-369726241/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 
 ## Contribuintes
 
