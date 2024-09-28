@@ -11,14 +11,13 @@ class AddLocacao(View):
     def get(self, request):
         return render(request, 'AddLocacao.html')
 
-    """ def post(self, request):
+    def post(self, request):
         name = request.POST.get("nome")
-        state = request.POST.get("estado")
+        state = request.POST.get("locacao")
 
-     locacao = Locacao(
-        nome = name
-        estado = state
-    )
-    
-    locacao.save()
-    return redirect('app:home') """
+        locacao = Locacao(
+            nome = name,
+            estado = state
+        )
+        locacao.save()
+        return redirect('app:home')

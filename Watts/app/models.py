@@ -6,5 +6,5 @@ class Locacao(models.Model):
 
 
 
-class Comodo(models.Model):
+#class Comodo(models.Model):
     #locacao = models.ForeignKey(Locacao, on_delete=models.CASCADE)
