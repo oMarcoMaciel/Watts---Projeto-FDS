@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://static.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest?cb=20140520015336"
+        type="image/x-icon">
+    <title>Watts - Adicionar Locação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'addLocacao.css' %}">
+</head>
+
+<body>
+    <main>
+        <h1>Adicionar Locação</h1>
+        <form action="{% url 'app:addLocacao' %}" method="POST">
+
+            <div class="inputdiv">
+                <label for="nome">Nome do Comodo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+            </div>
+            <div class="inputdiv">
+                <label for="nome">Locação:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome da locação" required>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </div>
+
+        </form>
