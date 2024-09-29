@@ -6,5 +6,6 @@ class Locacao(models.Model):
 
 
 
-#class Comodo(models.Model):
-    #locacao = models.ForeignKey(Locacao, on_delete=models.CASCADE)
+class Comodo(models.Model):
+    locacao = models.ForeignKey(Locacao, on_delete=models.CASCADE)
+    nome = models.CharField(max_length=100)

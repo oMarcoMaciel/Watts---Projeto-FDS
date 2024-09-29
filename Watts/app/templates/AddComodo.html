@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="{% url 'app:addComodo' %}" method="POST">
+        {% csrf_token %}
+        <label for="locacao">Escolha uma locação:</label>
+        <select name="locacao" id="locacao">
+            {% for locacao in locacoes %}
+                <option value="{{ locacao.id }}">{{ locacao.nome }} - {{ locacao.estado }}</option>
+            {% endfor %}
+        </select>
+    
+        <br>
+    
+        <label for="nome">Nome do Cômodo:</label>
+        <input type="text" id="nome" name="nome" required>
+    
+        <br>
+    
+        <button type="submit">Criar Cômodo</button>
+    </form>
+
+</body>
+</html>

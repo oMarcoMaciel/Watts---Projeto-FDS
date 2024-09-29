@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 from django.views import View
-from .models import Locacao
+from .models import Locacao, Comodo
 
 
 class HomeViews(View):
@@ -20,4 +20,18 @@ class AddLocacao(View):
             estado = state
         )
         locacao.save()
-        return redirect('app:home')
+        return redirect('app:home') 
+
+def CriarComodo(request):
+    locacoes = Locacao.objects.all()
+
+    if request.method == "POST":
+        locacao_id = request.POST.get('locacao')
+        nome_comodo = request.POST.get('nome')
+
+        locacao = Locacao.objects.get(id=locacao_id)
+        Comodo.objects.create(locacao=locacao, nome=nome_comodo)
+
+    return render(request, 'AddComodo.html', {'locacoes': locacoes})
+
+
