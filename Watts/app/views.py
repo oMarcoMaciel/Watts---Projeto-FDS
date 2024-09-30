@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 from django.views import View
-from .models import Locacao, Comodo
+from .models import Locacao, Comodo,Pontodeenergia
 
 
 class HomeViews(View):
@@ -33,5 +33,21 @@ def CriarComodo(request):
         Comodo.objects.create(locacao=locacao, nome=nome_comodo)
 
     return render(request, 'AddComodo.html', {'locacoes': locacoes})
+
+def CriarPontodeenergia(request):
+    locacoes = Locacao.objects.all()
+    comodos = Comodo.objects.all()
+
+    if request.method == "POST":
+        locacao_id = request.POST.get('locacao')
+        comodo_id = request.POST.get('comodo')
+        nome_pontodeenergia = request.POST.get('nome')
+        quant_gastos = request.POST.get('gastos')
+
+        locacao = Locacao.objects.get(id=locacao_id)
+        comodo = Comodo.objects.get(id=comodo_id)
+        Pontodeenergia.objects.create(locacao=locacao, comodo=comodo, nome=nome_pontodeenergia, gastos=quant_gastos)
+
+    return render(request, 'AddPontodeenergia.html', {'locacoes': locacoes, 'comodos': comodos})
 
 
