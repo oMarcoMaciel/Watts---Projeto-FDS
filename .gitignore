@@ -100,7 +100,7 @@ celerybeat-schedule.*
 # Environments 
 .venv 
 env/ 
-watts_env/
+watts_env/ #Para ele não enviar meu env para o deploy
 venv/ 
 ENV/ 
 env.bak/ 
