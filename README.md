@@ -30,19 +30,19 @@
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
-  ### Entrega 02:
+### Entrega 02:
 
 - [Screen Cast](https://youtu.be/s6QeFdeu8u0)
 - [Website Azure Watts](https://watts---projeto-fds.azurewebsites.net/) 
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
-  #### Prints Entrega 02:
+#### Prints Entrega 02:
   
-![Quadro Jira](![Captura de Tela 2024-09-30 às 21 50 53](https://github.com/user-attachments/assets/fe38bc52-f650-4525-8a2d-972b2e8d3682)
-)
-![Quadro Jira](![WhatsApp Image 2024-09-30 at 21 52 33](https://github.com/user-attachments/assets/486cad0d-1651-4260-9dad-62e81fb698fa)
-)
+Quadro Jira: [Captura de Tela 2024-09-30 às 21 50 53](https://github.com/user-attachments/assets/fe38bc52-f650-4525-8a2d-972b2e8d3682)
+
+Backlog Jira:[WhatsApp Image 2024-09-30 at 21 52 33](https://github.com/user-attachments/assets/486cad0d-1651-4260-9dad-62e81fb698fa)
+
 
 
 
