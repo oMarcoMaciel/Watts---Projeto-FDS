@@ -6,6 +6,15 @@
     <title>Watts</title>
 </head>
 <body>
-    <h1>Inicio</h1>
+    <h1>Início</h1>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'app:addLocacao' %}">Adicionar Locação</a></li>
+            <li><a href="{% url 'app:addComodo' %}">Criar Cômodo</a></li>
+            <li><a href="{% url 'app:addPontodeenergia' %}">Criar Ponto de Energia</a></li>
+        </ul>
+    </nav>
+
 </body>
 </html>

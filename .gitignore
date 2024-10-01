@@ -98,9 +98,9 @@ celerybeat-schedule.*
 *.sage.py 
 
 # Environments 
-.env 
 .venv 
 env/ 
+watts_env/
 venv/ 
 ENV/ 
 env.bak/ 

@@ -10,7 +10,7 @@
     <form action="{% url 'app:addComodo' %}" method="POST">
         {% csrf_token %}
         <label for="locacao">Escolha uma locação:</label>
-        <select name="locacao" id="locacao">
+        <select name="locacao" id="locacao" required>
             {% for locacao in locacoes %}
                 <option value="{{ locacao.id }}">{{ locacao.nome }} - {{ locacao.estado }}</option>
             {% endfor %}
