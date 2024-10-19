@@ -43,13 +43,18 @@ def CriarComodo(request):
     return render(request, 'AddComodo.html', {'locacoes': locacoes})
 
 
-def CriarPontodeenergia(request):
-    locacoes = Locacao.objects.all()
+class CriarPontodeenergia(View):
+    def get(self, request):
+        locacoes = Locacao.objects.all()
+        comodos = Comodo.objects.all()
+        locacao_id = request.GET.get('locacao')
+        if locacao_id:
+            comodos = Comodo.objects.filter(locacao_id=locacao_id)
+        return render(request, 'AddPontodeenergia.html', {'locacoes': locacoes, 'comodos': comodos})
 
-    # Inicialmente, nenhum cômodo é carregado até que uma locação seja selecionada
-    comodos = Comodo.objects.all()
-
-    if request.method == "POST":
+    def post(self, request):
+        locacoes = Locacao.objects.all()
+        comodos = Comodo.objects.all()
         locacao_id = request.POST.get('locacao')
         comodo_id = request.POST.get('comodo')
         nome_pontodeenergia = request.POST.get('nome')
@@ -64,13 +69,17 @@ def CriarPontodeenergia(request):
             if comodo.locacao_id != locacao.id:
                 return HttpResponse("Erro: O cômodo selecionado não pertence à locação escolhida.", status=400)
 
+            # Validação: quantidade de aparelhos e gastos de energia não podem ser negativos
+            if int(quantidadeAparelhos) < 0 or float(quant_gastos) < 0:
+                return HttpResponse("Erro: A quantidade de aparelhos e o gasto de energia não podem ser negativos.", status=400)
+
             # Se a verificação for bem-sucedida, cria o ponto de energia
             Pontodeenergia.objects.create(
                 locacao=locacao, 
                 comodo=comodo, 
                 nome=nome_pontodeenergia, 
                 gastos=quant_gastos,
-                quantidade = quantidadeAparelhos
+                quantidade=quantidadeAparelhos
             )
             return redirect('app:home')  # Redirecionar após sucesso
 
@@ -82,9 +91,4 @@ def CriarPontodeenergia(request):
                 'error': 'Locação ou cômodo inválidos!'
             })
 
-    # Caso contrário, apenas carregue os cômodos da locação selecionada, se houver
-    if 'locacao' in request.GET:
-        locacao_id = request.GET.get('locacao')
-        comodos = Comodo.objects.filter(locacao_id=locacao_id)  # Filtra cômodos pela locação
-
-    return render(request, 'AddPontodeenergia.html', {'locacoes': locacoes, 'comodos': comodos})
+        return render(request, 'AddPontodeenergia.html', {'locacoes': locacoes, 'comodos': comodos})
