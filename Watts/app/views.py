@@ -1,13 +1,18 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, get_object_or_404
 from django.http import HttpResponse
 from django.views import View
 from .models import Locacao, Comodo, Pontodeenergia
 
-
 class HomeViews(View):
     def get(self, request):
-        return render(request, 'home.html')
-
+        pontosdeenergia = Pontodeenergia.objects.all()
+        locacoes = Locacao.objects.all()
+        comodos = Comodo.objects.all()
+        return render(request, 'home.html', {
+            'pontosdeenergia': pontosdeenergia,
+            'locacoes': locacoes,
+            'comodos': comodos
+        })
 
 class AddLocacao(View):
     def get(self, request):
@@ -15,46 +20,52 @@ class AddLocacao(View):
 
     def post(self, request):
         name = request.POST.get("nome")
-        state = request.POST.get("locacao")
+        state = request.POST.get("estado")
 
         locacao = Locacao(
             nome=name,
             estado=state
         )
         locacao.save()
-        return redirect('app:home')
+        return redirect('home')
 
+class DeleteLocacao(View):
+    def post(self, request, locacao_id):
+        locacao = get_object_or_404(Locacao, id=locacao_id)
+        locacao.delete()
+        return redirect('home')
 
-def CriarComodo(request):
-    locacoes = Locacao.objects.all()
+class CriarComodo(View):
+    def get(self, request):
+        locacoes = Locacao.objects.all()
+        return render(request, 'AddComodo.html', {'locacoes': locacoes})
 
-    if request.method == "POST":
+    def post(self, request):
         locacao_id = request.POST.get('locacao')
         nome_comodo = request.POST.get('nome')
 
         try:
             locacao = Locacao.objects.get(id=locacao_id)
             Comodo.objects.create(locacao=locacao, nome=nome_comodo)
-            return redirect('app:home')  # Redirecionar após sucesso
+            return redirect('home')  # Redirecionar após sucesso
         except Locacao.DoesNotExist:
             # Se a locação não for encontrada, exiba uma mensagem de erro
+            locacoes = Locacao.objects.all()
             return render(request, 'AddComodo.html', {'locacoes': locacoes, 'error': 'Locação inválida!'})
 
-    return render(request, 'AddComodo.html', {'locacoes': locacoes})
-
+class DeleteComodo(View):
+    def post(self, request, comodo_id):
+        comodo = get_object_or_404(Comodo, id=comodo_id)
+        comodo.delete()
+        return redirect('home')
 
 class CriarPontodeenergia(View):
     def get(self, request):
         locacoes = Locacao.objects.all()
         comodos = Comodo.objects.all()
-        locacao_id = request.GET.get('locacao')
-        if locacao_id:
-            comodos = Comodo.objects.filter(locacao_id=locacao_id)
         return render(request, 'AddPontodeenergia.html', {'locacoes': locacoes, 'comodos': comodos})
 
     def post(self, request):
-        locacoes = Locacao.objects.all()
-        comodos = Comodo.objects.all()
         locacao_id = request.POST.get('locacao')
         comodo_id = request.POST.get('comodo')
         nome_pontodeenergia = request.POST.get('nome')
@@ -62,11 +73,10 @@ class CriarPontodeenergia(View):
         quantidadeAparelhos = request.POST.get('quantidade')
 
         try:
-            locacao = Locacao.objects.get(id=locacao_id)
             comodo = Comodo.objects.get(id=comodo_id)
 
             # Verificação: o cômodo pertence à locação selecionada?
-            if comodo.locacao_id != locacao.id:
+            if comodo.locacao_id != int(locacao_id):
                 return HttpResponse("Erro: O cômodo selecionado não pertence à locação escolhida.", status=400)
 
             # Validação: quantidade de aparelhos e gastos de energia não podem ser negativos
@@ -75,20 +85,26 @@ class CriarPontodeenergia(View):
 
             # Se a verificação for bem-sucedida, cria o ponto de energia
             Pontodeenergia.objects.create(
-                locacao=locacao, 
+                locacao_id=locacao_id, 
                 comodo=comodo, 
                 nome=nome_pontodeenergia, 
                 gastos=quant_gastos,
                 quantidade=quantidadeAparelhos
             )
-            return redirect('app:home')  # Redirecionar após sucesso
+            return redirect('home')  # Redirecionar após sucesso
 
         except (Locacao.DoesNotExist, Comodo.DoesNotExist):
             # Exiba uma mensagem de erro se a locação ou cômodo não forem encontrados
+            locacoes = Locacao.objects.all()
+            comodos = Comodo.objects.all()
             return render(request, 'AddPontodeenergia.html', {
                 'locacoes': locacoes,
-                'comodos': Comodo.objects.filter(locacao_id=locacao_id),  # Filtrar os cômodos pelo ID da locação
+                'comodos': comodos,
                 'error': 'Locação ou cômodo inválidos!'
             })
 
-        return render(request, 'AddPontodeenergia.html', {'locacoes': locacoes, 'comodos': comodos})
+class DeletePontodeenergia(View):
+    def post(self, request, pontodeenergia_id):
+        pontodeenergia = get_object_or_404(Pontodeenergia, id=pontodeenergia_id)
+        pontodeenergia.delete()
+        return redirect('home')
