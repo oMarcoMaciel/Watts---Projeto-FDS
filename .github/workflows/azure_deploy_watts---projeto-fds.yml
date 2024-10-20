@@ -28,12 +28,12 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install -r Watts\requirements.txt
+        run: pip install -r Watts/requirements.txt
         
       - name: Cleaning testing files
         run: |
           cd Watts/
-          rm db.sqlite3
+          rm -f db.sqlite3
           rm .env
           cd ..
 
