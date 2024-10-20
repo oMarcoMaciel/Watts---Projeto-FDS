@@ -3,18 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watts</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>Início</h1>
+    <h1>Locações</h1>
+    <ul>
+        {% for locacao in locacoes %}
+            <li>
+                {{ locacao.nome }} - {{ locacao.estado }}
+                <form method="post" action="{% url 'deleteLocacao' locacao.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Remover</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'addLocacao' %}">Adicionar Locação</a>
 
-    <nav>
-        <ul>
-            <li><a href="{% url 'app:addLocacao' %}">Adicionar Locação</a></li>
-            <li><a href="{% url 'app:addComodo' %}">Criar Cômodo</a></li>
-            <li><a href="{% url 'app:addPontodeenergia' %}">Criar Ponto de Energia</a></li>
-        </ul>
-    </nav>
+    <h1>Cômodos</h1>
+    <ul>
+        {% for comodo in comodos %}
+            <li>
+                {{ comodo.nome }} - {{ comodo.locacao.nome }}
+                <form method="post" action="{% url 'deleteComodo' comodo.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Remover</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'addComodo' %}">Adicionar Cômodo</a>
 
+    <h1>Pontos de Energia</h1>
+    <ul>
+        {% for ponto in pontosdeenergia %}
+            <li>
+                {{ ponto.nome }} - {{ ponto.gastos }} kWh - {{ ponto.quantidade }} aparelhos
+                <form method="post" action="{% url 'deletePontodeenergia' ponto.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Remover</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'addPontodeenergia' %}">Adicionar Ponto de Energia</a>
 </body>
 </html>
