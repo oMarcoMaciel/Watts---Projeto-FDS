@@ -32,14 +32,34 @@
 
 ### Entrega 02:
 
-- [Screen Cast](https://youtu.be/s6QeFdeu8u0)
+- [Screen Cast - 3 Histórias](https://youtu.be/s6QeFdeu8u0)
 - [Website Azure Watts](https://watts---projeto-fds.azurewebsites.net/) 
+- [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
+- [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
+
+<br>
+### Entrega 03:
+
+- [Screen Cast - 3 novas Histórias](https://youtu.be/MlhGrBzM2N8)
+- [Screen Cast Cypress](https://watts---projeto-fds.azurewebsites.net/) 
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
 <br>
 
 #### Prints Entrega 02:
+  
+Quadro Jira: ![Captura de Tela 2024-09-30 às 21 57 44](https://github.com/user-attachments/assets/e15cc330-29fd-4048-b747-5d9b4e0d1c65)
+
+<br>
+<br>
+
+Backlog Jira:![WhatsApp Image 2024-09-30 at 21 52 33](https://github.com/user-attachments/assets/6a62d79d-336f-4389-824b-5f22dbc5afe5)
+
+<br>
+<br>
+
+#### Prints Entrega 03:
   
 Quadro Jira: ![Captura de Tela 2024-09-30 às 21 57 44](https://github.com/user-attachments/assets/e15cc330-29fd-4048-b747-5d9b4e0d1c65)
 
