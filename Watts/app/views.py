@@ -22,6 +22,15 @@ class AddLocacao(View):
         name = request.POST.get("nome")
         state = request.POST.get("estado")
 
+        errors = {}
+        if not name:
+            errors['name_error'] = 'O campo nome é obrigatório'
+        if not state:
+            errors['state_error'] = 'O campo estado é obrigatório'
+
+        if errors:
+            return render(request, 'AddLocacao.html', errors)
+
         locacao = Locacao(
             nome=name,
             estado=state
