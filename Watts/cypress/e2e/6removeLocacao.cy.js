@@ -4,8 +4,10 @@ describe('Remover Locação', () => {
     });
   
     it('Remover Locação', () => {
-        
-        cy.get(':nth-child(2) > li > form > button').click();
+        for (let i = 0; i < 2; i++) {
+            
+          cy.get(':nth-child(2) > :nth-child(1) > form > button').click();
+        }
             
         
       });

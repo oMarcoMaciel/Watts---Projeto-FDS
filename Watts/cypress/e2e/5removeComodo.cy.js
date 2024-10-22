@@ -4,8 +4,11 @@ describe('Remover Comodo', () => {
     });
   
     it('Remover Locação', () => {
-      
-        cy.get(':nth-child(5) > li > form > button').click();
+        for (let i = 0; i < 3; i++) {
+            
+          cy.get(':nth-child(5) > :nth-child(1) > form > button').click();
+        }
+        
             
         
       });
