@@ -75,7 +75,7 @@ Quadro Jira: !![Captura de Tela 2024-10-22 às 21 09 19](https://github.com/use
 
 - **Antônio Paes** - <a href="mailto:ajpaj@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/ant%C3%B4niopaess/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Caio Almeida** - <a href="mailto:caa@cesar.school">📧</a> 
-- **Matheus Lucena** - <a href="mailto:mlh@cesar.school">📧</a> 
+- **Matheus Lucena** - <a href="mailto:mlh@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/matheus-de-lucena-henriques-283098331/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Marco Maciel** - <a href="mailto:magm@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/marcomaciel2210/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **João Henrique** - <a href="mailto:jhrvo@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/jo%C3%A3o-henrique-oliveira-585b91291/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Galileu Calaça** - <a href="mailto:gcmm@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/galileu-cala%C3%A7a-369726241/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
