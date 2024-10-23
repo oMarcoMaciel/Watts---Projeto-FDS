@@ -40,7 +40,8 @@
 ### Entrega 03:
 
 - [Screen Cast - 3 novas Histórias](https://youtu.be/MlhGrBzM2N8)
-- [Screen Cast Cypress](https://watts---projeto-fds.azurewebsites.net/) 
+- [Screen Cast Cypress + CI/CD](https://youtu.be/tmkRkrWyXH4)
+- [Screen Cast Protótipo Low Fi](https://youtu.be/Jez8mqHcSTE)  
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
@@ -60,12 +61,9 @@ Backlog Jira:![WhatsApp Image 2024-09-30 at 21 52 33](https://github.com/user-at
 
 #### Prints Entrega 03:
   
-Quadro Jira: ![Captura de Tela 2024-09-30 às 21 57 44](https://github.com/user-attachments/assets/e15cc330-29fd-4048-b747-5d9b4e0d1c65)
+Quadro Jira: !![Captura de Tela 2024-10-22 às 21 09 19](https://github.com/user-attachments/assets/a51b6415-31b7-48c3-821c-7e6ae921911c)
 
-<br>
-<br>
 
-Backlog Jira:![WhatsApp Image 2024-09-30 at 21 52 33](https://github.com/user-attachments/assets/6a62d79d-336f-4389-824b-5f22dbc5afe5)
 
 
 
