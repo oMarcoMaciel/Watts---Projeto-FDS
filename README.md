@@ -61,7 +61,7 @@ Backlog Jira:![WhatsApp Image 2024-09-30 at 21 52 33](https://github.com/user-at
 
 #### Prints Entrega 03:
   
-Quadro Jira: !![Captura de Tela 2024-10-22 às 21 09 19](https://github.com/user-attachments/assets/a51b6415-31b7-48c3-821c-7e6ae921911c)
+Quadro Jira: ![Captura de Tela 2024-10-22 às 21 09 19](https://github.com/user-attachments/assets/a51b6415-31b7-48c3-821c-7e6ae921911c)
 
 
 
