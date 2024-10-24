@@ -27,29 +27,44 @@
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-## Backlog
+## 📦 Entregas
 
-### Entrega 01:
+<details>
+<summary>Entrega 1</summary>
+<ul>
 
 - [Figma](https://www.figma.com/deck/UeRrQtq7oO5bvOHLTrm6hx/Untitled?node-id=2-34&node-type=CANVAS&t=gHFFUu4wcFKCrono-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
 - [Screen Cast](https://youtu.be/hQVwT0_B4r4?feature=shared) 
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
-### Entrega 02:
+  </ul>
+</details>
+
+<details>
+<summary>Entrega 2</summary>
+<ul>
 
 - [Screen Cast - 3 Histórias](https://youtu.be/s6QeFdeu8u0)
 - [Website Azure Watts](https://watts---projeto-fds.azurewebsites.net/) 
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
 
-### Entrega 03:
+  </ul>
+</details>
+
+<details>
+<summary>Entrega 3</summary>
+<ul>
 
 - [Screen Cast - 3 novas Histórias](https://youtu.be/MlhGrBzM2N8)
 - [Screen Cast Cypress + CI/CD](https://youtu.be/tmkRkrWyXH4)
 - [Screen Cast Protótipo Low Fi](https://youtu.be/Jez8mqHcSTE)  
 - [Quadro Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMjA4MjU4ZGQ3NmZiNDI4NmE2NjllZjk5NTNmYzk1ODgiLCJwIjoiaiJ9)
 - [Backlog Jira](https://watts-projeto-fds.atlassian.net/jira/software/projects/KAN/boards/1/backlog?atlOrigin=eyJpIjoiYjA5NTgyMzMxNjQ0NDZmOGI2OTliNTRhZWVjMjllNjUiLCJwIjoiaiJ9)
+
+  </ul>
+</details>
 
 <br>
 
@@ -79,14 +94,14 @@ Quadro Jira: ![Captura de Tela 2024-10-22 às 21 09 19](https://github.com/user
 
 ## Contatos
 
-- **Antônio Paes** - <a href="mailto:ajpaj@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/ant%C3%B4niopaess/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
+- **Antônio Paes** - <a href="mailto:ajpaj@cesar.school">📧/a> - <a href="https://www.linkedin.com/in/ant%C3%B4niopaess/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Caio Almeida** - <a href="mailto:caa@cesar.school">📧</a> 
 - **Matheus Lucena** - <a href="mailto:mlh@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/matheus-de-lucena-henriques-283098331/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Marco Maciel** - <a href="mailto:magm@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/marcomaciel2210/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **João Henrique** - <a href="mailto:jhrvo@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/jo%C3%A3o-henrique-oliveira-585b91291/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Galileu Calaça** - <a href="mailto:gcmm@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/galileu-cala%C3%A7a-369726241/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 
-## Contribuintes
+## 🙋 Criado por:
 
 <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;">
     <a href="https://github.com/AntonioPaess">
