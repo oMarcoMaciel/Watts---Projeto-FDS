@@ -94,7 +94,7 @@ Quadro Jira: ![Captura de Tela 2024-10-22 às 21 09 19](https://github.com/user
 
 ## Contatos
 
-- **Antônio Paes** - <a href="mailto:ajpaj@cesar.school">📧/a> - <a href="https://www.linkedin.com/in/ant%C3%B4niopaess/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
+- **Antônio Paes** - <a href="mailto:ajpaj@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/ant%C3%B4niopaess/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Caio Almeida** - <a href="mailto:caa@cesar.school">📧</a> 
 - **Matheus Lucena** - <a href="mailto:mlh@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/matheus-de-lucena-henriques-283098331/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
 - **Marco Maciel** - <a href="mailto:magm@cesar.school">📧</a> - <a href="https://www.linkedin.com/in/marcomaciel2210/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"></a>
