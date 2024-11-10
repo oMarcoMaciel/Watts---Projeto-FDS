@@ -1,7 +1,8 @@
 from django.shortcuts import redirect, render, get_object_or_404
-from django.http import HttpResponse
+from django.http import JsonResponse
 from django.views import View
-from .models import *
+from .models import Locacao, Comodo, Pontodeenergia
+from decimal import Decimal
 
 class HomeViews(View):
     def get(self, request):
@@ -93,12 +94,10 @@ class CriarPontoDeEnergia(View):
             locacoes = Locacao.objects.all()
             comodos = Comodo.objects.all()
             return render(request, 'AddPontoDeEnergia.html', {'locacoes': locacoes, 'comodos': comodos, 'error_message': 'O campo nome é obrigatório'})
-
         if not gastos:
             locacoes = Locacao.objects.all()
             comodos = Comodo.objects.all()
             return render(request, 'AddPontoDeEnergia.html', {'locacoes': locacoes, 'comodos': comodos, 'error_message': 'O campo gastos é obrigatório'})
-
         if not quantidade:
             locacoes = Locacao.objects.all()
             comodos = Comodo.objects.all()
@@ -143,3 +142,63 @@ class DeletePontodeenergia(View):
         pontodeenergia = get_object_or_404(Pontodeenergia, id=pontodeenergia_id)
         pontodeenergia.delete()
         return redirect('home')
+
+class CalcularCustoPontoDeEnergia(View):
+    def get(self, request, pontodeenergia_id, horas):
+        ponto = get_object_or_404(Pontodeenergia, id=pontodeenergia_id)
+        try:
+            horas = int(horas)
+        except ValueError: 
+            horas = 1
+        tarifa_kwh = Decimal('0.257')
+        custo = (ponto.quantidade * ponto.gastos) * tarifa_kwh
+        custo_formatado = format(custo, '.2f')
+        data = {
+            'ponto': {
+                'nome': ponto.nome,
+                'gastos': str(ponto.gastos),
+                'quantidade': ponto.quantidade,
+                'comodo': ponto.comodo.nome,
+                'locacao': ponto.locacao.nome,
+            },
+            'horas': horas,
+            'custo': custo_formatado,
+        }
+        return JsonResponse(data)
+
+class CalcularCustoComodo(View):
+    def get(self, request, comodo_id):
+        comodo = get_object_or_404(Comodo, id=comodo_id)
+        horas = request.GET.get('horas', 1)
+        try:
+            horas = int(horas)
+        except ValueError:
+            horas = 1
+
+        tarifa_kwh = Decimal('0.257')
+        pontos = Pontodeenergia.objects.filter(comodo=comodo)
+        custo_total = Decimal('0.0')
+
+        for ponto in pontos:
+            custo_total += (ponto.quantidade * ponto.gastos) * tarifa_kwh
+
+        custo_total_formatado = format(custo_total, '.2f')
+        return JsonResponse({
+            'comodo': comodo.nome,
+            'custo': custo_total_formatado
+        })
+
+class CalcularCustoLocacao(View):
+    def get(self, request, locacao_id):
+        locacao = get_object_or_404(Locacao, id=locacao_id)
+        tarifa_kwh = Decimal('0.257')
+        pontos = Pontodeenergia.objects.filter(locacao=locacao)
+        custo_total = Decimal('0.0')
+        for ponto in pontos:
+            custo_total += (ponto.quantidade * ponto.gastos) * tarifa_kwh
+
+        custo_total_formatado = format(custo_total, '.2f')
+        return JsonResponse({
+            'locacao': locacao.nome,
+            'custo': custo_total_formatado
+        })
