@@ -4,9 +4,12 @@ describe('Remover Locação', () => {
     });
   
     it('Remover Locação', () => {
-        cy.get('form[action*="deleteLocacao"]').each(($form) => {
+        cy.get('form[action*="deleteLocacao"]').each(($form, index, $list) => {
             cy.wrap($form).find('button').click();
-            cy.wait(1000); // Aguarde um segundo para a página ser recarregada
+            if (index < $list.length - 1) {
+                cy.wait(1000); // Aguarde um segundo para a página ser recarregada
+                cy.reload(); // Recarrega a página para garantir que o elemento foi removido
+            }
         });
     });
 });

@@ -4,10 +4,12 @@ describe('Remover Ponto de Energia', () => {
     });
   
     it('Remover Ponto de Energia', () => {
-        cy.get('form[action*="deletePontodeenergia"]').each(($form) => {
+        cy.get('form[action*="deletePontodeenergia"]').each(($form, index, $list) => {
             cy.wrap($form).find('button').click();
-            cy.wait(1000); // Aguarde um segundo para a página ser recarregada
-            cy.reload(); // Recarrega a página para garantir que o elemento foi removido
+            if (index < $list.length - 1) {
+                cy.wait(1000); // Aguarde um segundo para a página ser recarregada
+                cy.reload(); // Recarrega a página para garantir que o elemento foi removido
+            }
         });
     });
 });
