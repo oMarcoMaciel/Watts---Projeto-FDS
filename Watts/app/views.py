@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render, get_object_or_404
-from django.http import HttpResponse
+from django.http import JsonResponse
 from django.views import View
-from .models import *
+from .models import Locacao, Comodo, Pontodeenergia
 
 class HomeViews(View):
     def get(self, request):
@@ -93,12 +93,10 @@ class CriarPontoDeEnergia(View):
             locacoes = Locacao.objects.all()
             comodos = Comodo.objects.all()
             return render(request, 'AddPontoDeEnergia.html', {'locacoes': locacoes, 'comodos': comodos, 'error_message': 'O campo nome é obrigatório'})
-
         if not gastos:
             locacoes = Locacao.objects.all()
             comodos = Comodo.objects.all()
             return render(request, 'AddPontoDeEnergia.html', {'locacoes': locacoes, 'comodos': comodos, 'error_message': 'O campo gastos é obrigatório'})
-
         if not quantidade:
             locacoes = Locacao.objects.all()
             comodos = Comodo.objects.all()
@@ -143,3 +141,59 @@ class DeletePontodeenergia(View):
         pontodeenergia = get_object_or_404(Pontodeenergia, id=pontodeenergia_id)
         pontodeenergia.delete()
         return redirect('home')
+
+class CalcularCustoPontoDeEnergia(View):
+    def get(self, request, pontodeenergia_id, horas):
+        ponto = get_object_or_404(Pontodeenergia, id=pontodeenergia_id)
+        try:
+            horas = int(horas)
+        except ValueError:
+            horas = 1
+        custo = ponto.calcular_custo(horas)
+        data = {
+            'ponto': {
+                'nome': ponto.nome,
+                'gastos': str(ponto.gastos),
+                'quantidade': ponto.quantidade,
+                'comodo': ponto.comodo.nome,
+                'locacao': ponto.locacao.nome,
+            },
+            'horas': horas,
+            'custo': str(custo),
+        }
+        return JsonResponse(data)
+
+class CalcularCustoComodo(View):
+    def get(self, request, comodo_id):
+        comodo = get_object_or_404(Comodo, id=comodo_id)
+        horas = request.GET.get('horas', 1)
+        try:
+            horas = int(horas)
+        except ValueError:
+            horas = 1
+
+        pontos = Pontodeenergia.objects.filter(comodo=comodo)
+        custo_total = sum(ponto.calcular_custo(horas) for ponto in pontos)
+
+        return JsonResponse({
+            'comodo': comodo.nome,
+            'horas': horas,
+            'custo': str(custo_total)
+        })
+
+class CalcularCustoLocacao(View):
+    def get(self, request, locacao_id):
+        locacao = get_object_or_404(Locacao, id=locacao_id)
+        horas = request.GET.get('horas', 1)
+        try:
+            horas = int(horas)
+        except ValueError:
+            horas = 1
+
+        custo_total = locacao.calcular_custo(horas)
+
+        return JsonResponse({
+            'locacao': locacao.nome,
+            'horas': horas,
+            'custo': str(custo_total)
+        })
