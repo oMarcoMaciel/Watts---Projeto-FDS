@@ -20,8 +20,8 @@ Obrigado por considerar contribuir para o Watts! Aqui estão algumas diretrizes 
 2. **Crie e ative um ambiente virtual:**
 
     ```sh
-    python -m venv venv
-    source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+    python -m venv watts_env
+    source venv/bin/activate  # No Windows use `watts_env\Scripts\activate`
     ```
 
 3. **Instale as dependências do Python:**
