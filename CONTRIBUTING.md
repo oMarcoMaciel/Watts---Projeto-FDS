@@ -21,7 +21,7 @@ Obrigado por considerar contribuir para o Watts! Aqui estão algumas diretrizes 
 
     ```sh
     python -m venv watts_env
-    source venv/bin/activate  # No Windows use `watts_env\Scripts\activate`
+    source watts_env/bin/activate  # No Windows use `watts_env\Scripts\activate`
     ```
 
 3. **Instale as dependências do Python:**
