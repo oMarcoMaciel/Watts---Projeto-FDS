@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render, get_object_or_404
 from django.http import JsonResponse
 from django.views import View
 from .models import Locacao, Comodo, Pontodeenergia
+from decimal import Decimal
 
 class HomeViews(View):
     def get(self, request):
@@ -147,9 +148,11 @@ class CalcularCustoPontoDeEnergia(View):
         ponto = get_object_or_404(Pontodeenergia, id=pontodeenergia_id)
         try:
             horas = int(horas)
-        except ValueError:
+        except ValueError: 
             horas = 1
-        custo = ponto.calcular_custo(horas)
+        tarifa_kwh = Decimal('0.257')
+        custo = (ponto.quantidade * ponto.gastos) * tarifa_kwh
+        custo_formatado = format(custo, '.2f')
         data = {
             'ponto': {
                 'nome': ponto.nome,
@@ -159,7 +162,7 @@ class CalcularCustoPontoDeEnergia(View):
                 'locacao': ponto.locacao.nome,
             },
             'horas': horas,
-            'custo': str(custo),
+            'custo': custo_formatado,
         }
         return JsonResponse(data)
 
@@ -172,28 +175,30 @@ class CalcularCustoComodo(View):
         except ValueError:
             horas = 1
 
+        tarifa_kwh = Decimal('0.257')
         pontos = Pontodeenergia.objects.filter(comodo=comodo)
-        custo_total = sum(ponto.calcular_custo(horas) for ponto in pontos)
+        custo_total = Decimal('0.0')
 
+        for ponto in pontos:
+            custo_total += (ponto.quantidade * ponto.gastos) * tarifa_kwh
+
+        custo_total_formatado = format(custo_total, '.2f')
         return JsonResponse({
             'comodo': comodo.nome,
-            'horas': horas,
-            'custo': str(custo_total)
+            'custo': custo_total_formatado
         })
 
 class CalcularCustoLocacao(View):
     def get(self, request, locacao_id):
         locacao = get_object_or_404(Locacao, id=locacao_id)
-        horas = request.GET.get('horas', 1)
-        try:
-            horas = int(horas)
-        except ValueError:
-            horas = 1
+        tarifa_kwh = Decimal('0.257')
+        pontos = Pontodeenergia.objects.filter(locacao=locacao)
+        custo_total = Decimal('0.0')
+        for ponto in pontos:
+            custo_total += (ponto.quantidade * ponto.gastos) * tarifa_kwh
 
-        custo_total = locacao.calcular_custo(horas)
-
+        custo_total_formatado = format(custo_total, '.2f')
         return JsonResponse({
             'locacao': locacao.nome,
-            'horas': horas,
-            'custo': str(custo_total)
+            'custo': custo_total_formatado
         })
