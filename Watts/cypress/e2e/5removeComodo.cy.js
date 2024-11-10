@@ -6,6 +6,7 @@ describe('Remover Cômodo', () => {
     it('Remover Cômodo', () => {
         cy.get('form[action*="deleteComodo"]').each(($form) => {
             cy.wrap($form).find('button').click();
+            cy.wait(1000); // Aguarde um segundo para a página ser recarregada
         });
     });
 });
