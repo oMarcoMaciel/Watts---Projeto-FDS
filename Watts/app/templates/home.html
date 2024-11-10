@@ -19,7 +19,7 @@
                 </form>
                 <form method="get" onsubmit="event.preventDefault(); calcularCustoLocacao(this, {{ locacao.id }});">
                     <br>
-                    <button type="submit">Calcular Custo Total</button>
+                    <button type="submit">Custo Total</button>
                 </form>
             </li>
         {% endfor %}
@@ -38,7 +38,7 @@
                 </form>
                 <form method="get" onsubmit="event.preventDefault(); calcularCustoComodo(this, {{ comodo.id }});">
                     <br>
-                    <button type="submit">Calcular Custo Mensal</button>
+                    <button type="submit">Custo do Cômodo Mensal</button>
                 </form>
             </li>
         {% endfor %}
@@ -57,7 +57,7 @@
                 </form>
                 <form method="get" onsubmit="event.preventDefault(); calcularCustoPonto(this, {{ ponto.id }});">
                     <br>
-                    <button type="submit">Calcular Custo Mensal</button>
+                    <button type="submit">Custo do Ponto Mensal</button>
                 </form>
             </li>
         {% endfor %}
